@@ -13,8 +13,7 @@ def load_operations():
     """Загружает данные из файла и формирует список всех операций клиента """
 
     with open(path_to_operations, "r", encoding='utf8') as file:
-        content = file.read()
-        operations_list = json.loads(content)
+        operations_list = json.loads(file.read())
 
         return operations_list
 
